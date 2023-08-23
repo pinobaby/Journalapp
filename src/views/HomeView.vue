@@ -1,8 +1,22 @@
 <template>
 
   <div class="home">
-    <h1>prueba lap</h1>
     <img alt="Vue logo" src="../assets/logo.png">
+    <h1>Hola mundo</h1>
+    <button @click="goTodayBook" class="btn btn-primary">Primary</button>
+    <button @click="goTodayBook" class="btn btn-secondary">Secondary</button>
+    <button @click="goTodayBook" class="btn btn-success">Success</button>
   </div>
 
 </template>
+  <script>
+export default {
+ 
+
+  methods: {
+    goTodayBook() {
+      this.$router.push({ name: 'daybook' });
+    }
+  }
+}
+</script>
