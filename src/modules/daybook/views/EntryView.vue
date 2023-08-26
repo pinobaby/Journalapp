@@ -23,12 +23,13 @@ import { defineAsyncComponent } from 'vue';
     <hr>
     <div class="d-flex flex-column px-3 h-75">
         <textarea placeholder="¿Qué sucedio ayer?"></textarea>
-
-        <Fab/>
         <img 
-        src="https://images7.memedroid.com/images/UPLOADED660/64ae64d15215b.webp" 
+        src="../../../assets/feo.jpeg" 
         alt="Entry-picture"
         class="img-thumbnail">
+        <Fab
+          icon="fas fa-save"  
+        />
     </div>
 
 </template>
