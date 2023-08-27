@@ -12,7 +12,7 @@
 
     <div class="entry-scrollarea">
         <Entry
-             v-for="item in 100"
+             v-for="item in getEntryesByTerm"
             :key="item"
         />
     </div>
@@ -21,11 +21,15 @@
 
 <script>
 
-import { defineAsyncComponent } from 'vue';
+import { defineAsyncComponent } from 'vue'
+import {mapGetters} from 'vuex'
 export default {
     
     components:{
         Entry: defineAsyncComponent(() => import('../components/Entry.vue')),
+    },
+    computed: {
+        ...mapGetters(['daybook','getEntryesByTerm'])
     },
 }
 </script>
