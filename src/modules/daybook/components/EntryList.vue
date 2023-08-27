@@ -34,8 +34,8 @@ export default {
     },
     computed: {
         ...mapGetters('journal',['getEntriesByTerm']),
-        
-        getEntriesByTerm() {
+
+        getEntriesByTerm () {
             return this.getEntriesByTerm(this.term)
         },
     },
