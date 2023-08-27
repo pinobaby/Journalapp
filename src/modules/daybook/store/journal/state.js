@@ -1,5 +1,14 @@
 
 export default () => ({
     isLoading: true,
-    entries: [1,2,3,4,5,6]
+    entries: [
+        {
+            id: new Date().getTime(),
+            date: new Date().toDateString(),
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+            picture: null
+            
+        }
+        
+    ]
 })
