@@ -3,9 +3,9 @@
         @click="$router.push({ name: 'entry', params: { id: 10}})">
          <div class="entry-tittle- d-flex">
 
-         <span class="text-success fs-5 fw-bold">15</span>
-         <span class="mx-1 fs-5">Julio</span>
-         <span class="mx-2 fw-light">2023, martes</span>
+         <span class="text-success fs-5 fw-bold">{{ id }}</span>
+         <span class="mx-1 fs-5">{{ date }}</span>
+         <span class="mx-2 fw-light">{{ content }}</span>
             
         </div>  
         <div class="entry-description">
@@ -14,6 +14,48 @@
    
    </div>
 </template>
+
+<script>
+import {mapGetters} from 'vuex'
+export default {
+   props:{
+         id: {
+              type: [String, Number],
+              required: true
+         },
+         date: {
+              type: String,
+              required: true
+         },
+         content: {
+              type: String,
+              required: true
+         },
+         picture: {
+              type: String,
+              required: false
+         }
+    },
+    computed: {
+        ...mapGetters('journal',['getEntriesByTerm']),
+
+        EntriesByTerm () {
+            return this.getEntriesByTerm(this.term)
+        },
+    },
+    data() {
+        return {
+            term:''
+        }
+    },
+
+   }
+
+
+
+
+
+</script>
 
 
 

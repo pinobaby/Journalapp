@@ -13,7 +13,7 @@
 
     <div class="entry-scrollarea">
         <Entry
-             v-for="item in getEntriesByTerm"
+            v-for="item in EntriesByTerm"
             :key="item"
             
         />
@@ -35,13 +35,13 @@ export default {
     computed: {
         ...mapGetters('journal',['getEntriesByTerm']),
 
-        getEntriesByTerm () {
+        EntriesByTerm () {
             return this.getEntriesByTerm(this.term)
         },
     },
     data() {
         return {
-            term:""
+            term:''
         }
     },
 }
