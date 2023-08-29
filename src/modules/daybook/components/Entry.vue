@@ -6,7 +6,7 @@
          <span class="text-success fs-5 fw-bold">{{ id }}</span>
          <span class="mx-1 fs-5">{{ date }}</span>
          <span class="mx-2 fw-light">{{ content }}</span>
-         <h2>Prueba</h2>
+        
             
         </div>  
         <div class="entry-description">

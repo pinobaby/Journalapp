@@ -15,6 +15,7 @@
         <Entry
             v-for="item in EntriesByTerm"
             :key="item"
+            :id="item.date"
             
         />
     </div>
