@@ -5,7 +5,7 @@ export default () => ({
         {
             id: '1',
             date: new Date().toDateString(),
-            text: 'Enim cillum commodo  caca aliquip Lorem consequat deserunt reprehenderit. Aliqua est esse nostrud est incididunt consequat dolor. Nostrud velit anim ea ex deserunt consectetur. Ullamco consequat laboris aute aliqua Lorem ex esse ullamco commodo laboris labore reprehenderit. Consequat qui deserunt est in pariatur nostrud ex laboris nostrud sint elit exercitation adipisicing. Ad eu qui ad cillum dolor et do id Lorem occaecat magna id.',
+            text: 'Enim cillum commodo  zaza aliquip Lorem consequat deserunt reprehenderit. Aliqua est esse nostrud est incididunt consequat dolor. Nostrud velit anim ea ex deserunt consectetur. Ullamco consequat laboris aute aliqua Lorem ex esse ullamco commodo laboris labore reprehenderit. Consequat qui deserunt est in pariatur nostrud ex laboris nostrud sint elit exercitation adipisicing. Ad eu qui ad cillum dolor et do id Lorem occaecat magna id.',
             picture: null
             
         },
